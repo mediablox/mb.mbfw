@@ -18,5 +18,9 @@
   "homepage": "https://github.com/mediablox/mb.mbfw#readme",
   "devDependencies": {
     "release-it": "^12.3.6"
+  },
+  "dependencies": {
+    "mb.mbfw.js": "git+https://github.com/mediablox/mb.mbfw.js.git",
+    "mb.mbfw.scss": "git+https://github.com/mediablox/mb.mbfw.scss.git"
   }
 }
