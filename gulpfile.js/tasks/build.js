@@ -3,4 +3,4 @@
 var gulp = require('gulp');
 
 // Builds the documentation and framework files
-gulp.task('build', gulp.series('styles','javascript'));
+gulp.task('build', gulp.series('scss','javascript'));

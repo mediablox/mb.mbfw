@@ -21,4 +21,4 @@ gulp.task('scss', function(done) {
 	done();
 });
 
-gulp.task('styles', gulp.series('scss'));
+gulp.task('scss', gulp.series('scss'));
