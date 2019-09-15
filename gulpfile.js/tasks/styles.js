@@ -13,7 +13,10 @@ gulp.task('scss', function(done) {
 		.pipe(sourcemaps.init())
 		.pipe(plumber())
 		.pipe(sass({
-      includePaths: ["node_modules/inuitcss", "node_modules/mb.mbfw.scss"]
+      includePaths: [
+				"node_modules/mb.mbfw.scss",
+				"node_modules/inuitcss"
+			]
     }).on('error', sass.logError))
 		.pipe(postcss([autoprefixer()])) // uses ".browserslistrc"
 		.pipe(sourcemaps.write('.'))
